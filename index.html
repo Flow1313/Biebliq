@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flowline Clothing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="topbar">
+        <div class="scrolling-text">
+            Biebliq Couture website is in progress.
+        </div>
+    </div>
+        <header class="navbar">
+            <div class="left-section">
+                <div class="logo">Biebliq Couture</div>
+            </div>
+        <!-- Hamburger (mobile) -->
+                <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+                    <div class="center-section">
+                        <ul class="nav-list">
+                            <li><a href="#">Home</a></li>
+                                <li>
+                                    <a href="#">New in Shop ▾</a>
+                                        <div class="dropdown">
+                                            <a href="#">Native</a>
+                                            <a href="#">Polo</a>
+                                            <a href="#">T-Shirts</a>
+                                            <a href="#">Shirts & Blouses</a>
+                                            <a href="#">Jacket</a>
+                                            <a href="#">Pant Trousers</a>
+                                            <a href="#">Hoodies</a>
+                                            <a href="#">Joggers</a>
+                                            <a href="#">Sweat Shirts</a>
+                                        </div>
+                                </li>
+                                            <li>
+                                                <a href="#">About Us▾</a>
+                                                    <div class="dropdown">
+                                                        <a href="#">Our Team</a>
+                                                        <a href="#">Careers</a>
+                                                    </div>
+                                            </li>
+                                                <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                                <!-- Right: Flag + Sign In -->
+                        <div class="right-section">
+                            <span class="flag"><img src="./image/nig.png" alt="Nigeria flag" width="30"></span>
+                                <button class="signin-btn" onclick="openModal()">
+                                    <i class="fas fa-user"></i> Sign In</button>
+                        </div>
+        </header>
+    <!-- Modal -->
+            <div class="modal" id="signinModal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeModal()">&times;</span>
+                        <h2>Sign In</h2>
+                            <input type="text" placeholder="Username">
+                                <input type="password" placeholder="Password">
+                                    <button>Login</button>
+                </div>
+            </div>
+
+                <div class="utility-navbar">
+                    <div class="utility-search">
+                        <input type="text" placeholder="Search products...">
+                            <button class="search-btn">🔍</button>
+                </div>
+
+                    <div class="utility-icons">
+                        <span class="icon">🛒</span>
+                        <span class="icon">❤️</span>
+                        <span class="icon">👤</span>
+                        <span class="icon">🔔</span>
+                    </div>
+            </div>
+
+<!-- Hero Slideshow Section -->
+                <div class="hero-slider">
+                    <div class="slide">
+                        <img src="./image/lady happy after using paywise for her….jpg" alt="Fashion 1" height="50px">
+                            <div class="text">New Arrivals – Trendy Styles for You</div>
+                    </div>
+
+                        <div class="slide">
+                            <img src="./image/fdfa68cb-8c9f-4191-a202-0d742d8a063d.jpg" alt="Fashion 2">
+                                <div class="text">Discover Your Unique Style</div>
+                        </div>
+
+                            <div class="slide">
+                                <img src="./image/Paying homage to the 90s, we love a good oversized….jpg" alt="Fashion 3">
+                                    <div class="text">Luxury & Comfort Combined</div>
+                            </div>
+                </div>
+                    <div class="section-title">
+                        <h2>✨ New Arrivals ✨</h2>
+                            <p>Discover the latest trends in our fashion collection</p>
+                    </div>
+                    <div class="product-carousel">
+                        <button class="prev">❮</button>
+                            <div class="product-track">
+                                <div class="product-card">
+                                    <img src="./image/ec8ffb5f-cccb-435b-87ee-dad4395f1e68.jpg" alt="Red Dress">
+                                        <div class="product-info">
+                                            <h4>Elegant Red Dress</h4>
+                                                <p>$45</p>
+                                        </div>
+                                </div>
+                                    <div class="product-card">
+                                        <img src="./image/49c58944-7db7-4a52-ad99-5f6aec7e4318.jpg" alt="Leather Jacket">
+                                            <div class="product-info">
+                                                <h4>Leather Jacket</h4>
+                                                    <p>$60</p>
+                                            </div>
+                                    </div>
+                                        <div class="product-card">
+                                            <img src="./image/▷ 1001 + Ideen für afrikanische Stoffe von heute….jpg" alt="High Heels">
+                                                <div class="product-info">
+                                                    <h4>Classic High Heels</h4>
+                                                        <p>$75</p>
+                                                </div>
+                                        </div>
+                                            <div class="product-card">
+                                                <img src="./image/New The Angie Dress ~Latest African Fashion….jpg" alt="High Heels">
+                                                    <div class="product-info">
+                                                        <h4>Native Adire</h4>
+                                                            <p>$50</p>
+                                                    </div>
+                                            </div>
+                                                <div class="product-card">
+                                                    <img src="./image/97211166-6c7c-45b9-9139-a256a3da08dc.jpg" alt="High Heels">
+                                                        <div class="product-info">
+                                                            <h4>Pants</h4>
+                                                                <p>$90</p>
+                                                </div>
+                                            </div>
+                                                <div class="product-card">
+                                                    <img src="./image/Shop All-new Designs Inspired by Women Today_.jpg" alt="High Heels">
+                                                        <div class="product-info">
+                                                            <h4>Pants</h4>
+                                                                <p>$90</p>
+                                                        </div>
+                                                </div>
+                                                    <div class="product-card">
+                                                    <img src="./image/native.jpg" alt="High Heels">
+                                                        <div class="product-info">
+                                                            <h4>Pants</h4>
+                                                                <p>$90</p>
+                                                        </div>
+                                                </div>
+                                                    <div class="product-card">
+                                                        <img src="./image/Credt_ Folah Signature.jpg" alt="High Heels">
+                                                            <div class="product-info">
+                                                                <h4>Pants</h4>
+                                                                    <p>$90</p>
+                                                            </div>
+                                                    </div>
+                                                        <div class="product-card">
+                                                            <img src="./image/dabbf28e-2249-4d5a-bc19-3fb1e02dd3fd.jpg" alt="High Heels">
+                                                                <div class="product-info">
+                                                                    <h4>Pants</h4>
+                                                                        <p>$90</p>
+                                                                </div>
+                                                        </div>   
+                            </div>
+                                <button class="next">&#10095;</button>
+                    </div>
+                        <div class="logo-banner">
+                            <div class="logo-track">
+                                <img src="./image/house7.png" alt="Brand 1">
+                                <img src="./image/beauty.png" alt="Brand 2">
+                                <img src="./image/green africa.jpg" alt="Brand 3">
+                                <img src="./image/fafafa.jpg" alt="Brand 4">
+                                <img src="./image/lagos.jpg" alt="Brand 5">
+                                <img src="./image/logo test.png" alt="Brand 6">
+                                <img src="./image/ghana.png" alt="Brand 5">
+                                <img src="./image/masterEcobank.png" alt="Brand 6">
+                            </div>
+                        </div>
+                            <div class="gallery-section">
+  <!-- First row -->
+  <div class="gallery-row">
+    <div class="gallery-item">
+      <img src="./image/78fdec9d-8676-4e0c-8a30-a71c272f6c00.jpg" alt="Fashion 1">
+      <div class="caption"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="./image/f556f5a3-4b28-4e14-8698-8fd28cbdb255.jpg" alt="Fashion 2">
+      <div class="caption"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="./image/c400c1b9-345d-43d2-b743-03e99f37d087.jpg" alt="Fashion 3">
+      <div class="caption"></div>
+    </div>
+  </div>
+
+  <!-- Second row -->
+  <div class="gallery-row">
+    <div class="gallery-item">
+      <img src="./image/Shop All-new Designs Inspired by Women Today_.jpg" alt="Fashion 4">
+      <div class="caption"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="./image/e7dc4c46-7a85-40d6-a573-d79e04d59783.jpg" alt="Fashion 5">
+      <div class="caption"></div>
+    </div>
+    <div class="gallery-item">
+      <img src="./image/Bavic Fashion.jpg" alt="Fashion 6">
+      <div class="caption"></div>
+    </div>
+  </div>
+</div>
+<div class="hero-section">
+    <img src="./image/272fba76-cdd1-43ab-982e-5ead1c4190d9.jpg" alt="Fashion Banner">
+    <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>GET UPDATED</h1>
+                <div class="hero-form">
+                    <input type="email" placeholder="E-mail">
+                    <button>Subscribe</button>
+                </div>
+        </div>
+</div>
+<!-- Floating Popup -->
+<div class="measurement-popup" onclick="goToMeasurement()">
+  <p>Click to input your measurement</p>
+</div>
+
+<!-- Measurement Form -->
+<div id="measurement-form">
+  <h2>Enter Your Measurements</h2>
+  <form>
+    <table>
+      <tr>
+        <td><label for="chest">Chest</label></td>
+        <td><input type="text" id="chest" name="chest" placeholder="Enter chest size"></td>
+      </tr>
+      <tr>
+        <td><label for="waist">Waist</label></td>
+        <td><input type="text" id="waist" name="waist" placeholder="Enter waist size"></td>
+      </tr>
+      <tr>
+        <td><label for="hips">Hips</label></td>
+        <td><input type="text" id="hips" name="hips" placeholder="Enter hips size"></td>
+      </tr>
+      <tr>
+        <td><label for="length">Length</label></td>
+        <td><input type="text" id="length" name="length" placeholder="Enter dress length"></td>
+      </tr>
+      <tr>
+        <td><label for="sleeve">Sleeve</label></td>
+        <td><input type="text" id="sleeve" name="sleeve" placeholder="Enter sleeve length"></td>
+      </tr>
+    </table>
+
+    <button type="submit" class="submit-btn">Submit Measurements</button>
+  </form>
+</div>
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- About / Brand -->
+    <div class="footer-section">
+      <h2 class="footer-logo">BiebliqCouture</h2>
+      <p>Your one-stop destination for trendy, stylish & affordable fashion.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
+    </div>
+
+    <!-- Customer Support -->
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <div class="social icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Newsletter Signup -->
+    <div class="footer-section">
+      <h3>Newsletter</h3>
+      <div class="newsletter">
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 FashionBrand. All rights reserved | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+  </div>
+
+  <!-- 🔹 Scroll to Top Button -->
+  <button class="scroll-top" id="scrollTopBtn">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</footer>
+
+    <script>
+    function toggleMenu() {
+      document.querySelector(".nav-list").classList.toggle("active");
+    }
+
+    function openModal() {
+      document.getElementById("signinModal").style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("signinModal").style.display = "none";
+      document.getElementById("errorMsg").innerText = ""; // clear errors
+    }
+
+    function login() {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+      const errorMsg = document.getElementById("errorMsg");
+
+      if (user === "admin" && pass === "12345") {
+        alert("✅ Login successful! Welcome " + user);
+        closeModal();
+      } else {
+        errorMsg.innerText = "❌ Invalid username or password!";
+      }
+    }
+
+    // Close modal when clicking outside
+    window.onclick = function(event) {
+      let modal = document.getElementById("signinModal");}
+      if (event.target == modal) {
+        modal.style.display = "none";
+        document.getElementById("errorMsg").innerText = "";
+      }
+  </script>
+    <script>
+function toggleSearch() {
+  const input = document.querySelector(".search-input");
+  if (input.style.display === "block") {
+    input.style.display = "none";
+  } else {
+    input.style.display = "block";
+    input.focus();
+  }
+}
+</script>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let slides = document.querySelectorAll(".slide");
+  slides.forEach(slide => slide.style.display = "none");
+  slideIndex++;
+  if (slideIndex > slides.length) { slideIndex = 1 }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 4000); // Change every 4 seconds
+}
+</script>
+<script>
+const track = document.querySelector('.product-track');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
+let currentPosition = 0;
+const cardWidth = 360; // width + margin
+
+nextBtn.addEventListener('click', () => {
+  currentPosition -= cardWidth;
+  if (Math.abs(currentPosition) >= track.scrollWidth - (cardWidth * 3)) {
+    currentPosition = -(track.scrollWidth - (cardWidth * 3));
+  }
+  track.style.transform = `translateX(${currentPosition}px)`;
+});
+
+prevBtn.addEventListener('click', () => {
+  currentPosition += cardWidth;
+  if (currentPosition > 0) {
+    currentPosition = 0;
+  }
+  track.style.transform = `translateX(${currentPosition}px)`;
+});
+</script>
+
+
+<script>
+
+function showPopup() {
+  const popup = document.getElementById("measurement-popup");
+
+  // Only show if currently hidden
+  if (popup.style.display === "none" || popup.style.display === "") {
+    popup.style.display = "block";
+
+    // Auto-hide after 5 seconds
+    setTimeout(() => {
+      popup.style.display = "none";
+    }, 5000);
+  }
+}
+
+    
+function goToMeasurement() {
+  // Option 1: Scroll to measurement form
+  document.getElementById("measurement-form").style.display = "block";
+  document.getElementById("measurement-form").scrollIntoView({ behavior: "smooth" });
+
+  // Option 2 (instead): Redirect to another page
+  // window.location.href = "measurement-form.html";
+}
+
+
+// Show popup on load
+window.addEventListener("load", showPopup);
+
+// Re-show popup ONLY when user scrolls after it has been hidden
+window.addEventListener("scroll", () => {
+  const popup = document.getElementById("measurement-popup");
+  if (popup.style.display === "none") {
+    showPopup();
+  }
+});
+</script>
+
+<script>
+// Get the button
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+// Show button when scrolling down
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollTopBtn.style.display = "block";
+  } else {
+    scrollTopBtn.style.display = "none";
+  }
+});
+
+// Smooth scroll to top
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+
+</script>
+
+    </body>
+</html>
